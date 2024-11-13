@@ -19,13 +19,14 @@
     <form>
         <h1>SignUp</h1>
         <label for="3">Text:</label>
-        <input type="text" id="3" placeholder="Enter Your Text" name="text"><br><br>
+        <input type="text" id="3" placeholder="Enter Your Text" name="text" required><br><br>
         <label for="4">Email:</label>
-        <input type="email" id="4" placeholder="Enter Your Email" name="Email"><br><br>
+        <input type="email" id="4" placeholder="Enter Your Email" name="Email" required><br><br>
         <label for="5">Password:</label>
-        <input type="password" id="5" placeholder="Enter the password" name="pass"><br><br>
+        <input type="password" id="5" placeholder="Enter the password" name="pass" required><br><br>
         <label for="6">Date:</label>
-        <input type="date" id="6" name="date">
+        <input type="date" id="6" name="date" required>
+        <input type="submit">
     </form><br><br>
 
      <!--Table -->
@@ -68,7 +69,12 @@
 
 <!--vedio-->
 
-<video src="C:\Users\Dell\Desktop\Pfs9\HTML Test.html\video.jpg" autoplay loop muted></video>
+<video autoplay loop>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</video>
 <!-- images -->
 <div class="gallery">
       <img src="image1.jpg" width="200" length="100" alt="Image 1">
@@ -85,6 +91,63 @@
     <option value="blue">Blue</option>
     <option value="green">Green</option>
 </select>
+<!-- more questions -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Youtube Video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hxMNYkLN7tI?si=Syuc1sk88rHnh9n2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+</body>
+</html>
+
+
+<body>
+    <head>
+        <h1>Frequently Asked Questions</h1>
+
+    <details>
+        <summary>What is your return policy?</summary>
+        <p>Our return policy allows for returns within 30 days of purchase. Items must be in original condition, and you will need the receipt or proof of purchase.</p>
+    </details>
+
+    <details>
+        <summary>How long does shipping take?</summary>
+        <p>Shipping typically takes 5-7 business days for standard delivery. Expedited shipping options are also available at checkout.</p>
+    </details>
+
+    <details>
+        <summary>Do you offer international shipping?</summary>
+        <p>Yes, we offer international shipping to select countries. Shipping rates and times may vary depending on your location.</p>
+    </details>
+    </head>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>User Information Form</h1>
+
+    <form action="/submit-form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
 
       
 </body>
