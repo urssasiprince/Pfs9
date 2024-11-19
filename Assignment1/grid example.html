@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 
+                100px            /* Fixed width (px) */
+                1fr              /* Fractional unit (flexible) */
+                25%              /* Percentage width */
+                auto             /* Auto width (based on content) */
+                minmax(100px, 200px) /* Minmax function (100px to 200px) */
+                repeat(3, 1fr)   /* Repeat (dynamic) - 3 equal fractional columns */
+                repeat(2, 150px) /* Repeat (fixed) - 2 fixed 150px columns */
+                fit-content(200px) /* Fit-content (200px based on content) */
+                subgrid;         /* Subgrid (uses parent's grid layout) */
+            grid-template-rows: 
+                100px            /* Fixed height (px) */
+                200px            /* Fixed height (px) */
+                auto             /* Auto height (based on content) */
+                minmax(100px, 300px) /* Minmax function (100px to 300px) */
+                repeat(2, 150px) /* Repeat (fixed) - 2 fixed 150px rows */
+                fit-content(150px); /* Fit-content (150px based on content) */
+        }
+        .grid-container div {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #e6dbc4;
+        }
+        .subgrid-container {
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-template-rows: subgrid;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>Fixed 100px</div>
+        <div>1fr (Fractional)</div>
+        <div>25% Width</div>
+        <div>Auto Width</div>
+        <div>Minmax 100px to 200px</div>
+        <div>Repeat 3 x 1fr</div>
+        <div>Repeat 2 x 150px</div>
+        <div>Fit-content 200px</div>
+        <div class="subgrid-container">
+            <div>Subgrid Item 1</div>
+            <div>Subgrid Item 2</div>
+        </div>
+        <div>Another Fixed 100px</div>
+        <div>Minmax 100px to 300px</div>
+        <div>Repeat 2 x 150px Rows</div>
+        <div>Fit-content 150px</div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-----Colors-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(253, 239, 230);
+        }
+        .w1{
+            color: #555555;
+        }
+        .w2{
+            color: rgb(54, 222, 45);
+        }
+        .w3{
+            color:hsl(338, 64%, 62%)
+        }
+        w4{
+            color: rgb(135, 174, 245);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="w1">
+        <h1>GOOD MORNING</h1>
+        <p>Had your breakfast?</p>
+    </div>
+    <div class="w2">
+        <h1>GOOD AFTERNOON</h1>
+        <p>had your Lunch?</p>
+    </div>
+    <div class="w3">
+        <h1>GOOD EVENING</h1>
+        <p>had your dinner?</p>
+    </div>
+    <div class="w4">
+        <h1>GOOD EVENING</h1>
+        <p>had your dinner?</p>
+    </div>
+</body>
+</html>

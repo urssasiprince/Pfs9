@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content: " ☀ ";
+            color:gold;
+            font-size:large;
+        }
+        h1::after{
+            content: " ☀ ";
+            color:gold;
+            font-size:large;
+        }
+        div::first-letter{
+            font-size: 3em;
+            font-weight: bold;
+            color:rgb(70, 142, 145);
+        }
+        .aww::first-line{
+            font-size: 1.5em;
+            color: rgb(35, 109, 35);
+        }
+        ::selection{
+            background-color:#3399ff;
+            color: white;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-------Before, After---------->
+    <h1>Good Morning</h1><br><br>
+
+
+    <!-------First letter---------->
+    <div> pseudo-element targets the first letter of an element's text. It is  commonly used for typographic styling like drop caps</div><br><br>
+
+
+    <!-------First Line---------->
+    <p class="aww">the first line of the paragraph is made larger,<br> italicized, and colored green.</p><br><br>
+
+
+    <!-------Selection---------->
+    <p> when the text is selected, its background turns to gray and the text color becomes white.</p><br><br>
+
+
+</body>
+</html>
